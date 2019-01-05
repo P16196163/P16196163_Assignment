@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shojumaru|');
+
 *{
   padding: 0;
   margin: 0;
@@ -15,29 +17,42 @@ header {
   height: 2.5em;
   color: #FFFFFF;
   width: 100%;
+  box-shadow: .1em .05em .1em .05em rgba(0,0,0,0.75);
 }
 
 #title {
   padding-left: .4em;
   color: #FFFFFF;
-  font-family: cursive;
+  font-family: 'Shojumaru', cursive;
+  font-size: 1.8em;
 }
 
-#menu-button {
+#menu-button-open {
   display: flex;
   padding-right: .5em;
   padding-left: .5em;
   margin-right: .2em;
   justify-content: space-evenly;
   align-content: center;
-  border: 3px solid #FFFFFF;
+  border: 1.2px solid #FFFFFF;
   border-radius: 5px;
 }
 
-#menu-button:hover {
+#menu-button-open:hover {
   background-color: #FFFFFF;
   color: #3737D0;
   border-color: #2238A8;
+}
+
+#menu-button-close {
+  display: none;
+  padding-right: .5em;
+  padding-left: .5em;
+  margin-right: .2em;
+  justify-content: space-evenly;
+  align-content: center;
+  border: 1.2px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 #buttons {
@@ -59,7 +74,7 @@ header {
 }
 
 nav {
-  display: flex;
+  display: none;
   justify-content: center;
   background: #2238A8;
   overflow: hidden;
@@ -67,7 +82,7 @@ nav {
   margin-right: .2em;
 }
 
-  nav a {
+nav a {
   display: flex;
   justify-content: center;
   font-size: 19px;
@@ -81,49 +96,198 @@ nav {
   transition: all 1.5s;
   }
 
-  nav a:hover {
+nav a:hover {
   color: #BC002D;
   background-color: #FFFFFF;
   }
-
-
 
 body{
   background-color: #FFFFFF;
 }
 
+h1 {
+font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------Homepage ---------------------*/
+
+/*----------------------Page 2 ----------------------*/
+.map {
+  display: flex;
+  padding-left: .2em;
+  padding-right: .2em;
+}
+#venueMap {
+  width: 100%;
+  height: 25em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Japan_location_map.svg/1028px-Japan_location_map.svg.png');
+  background-position: bottom 80% right 45%;
+  background-repeat: no-repeat;
+  background-size: 140%;
+}
+
+.venue {
+  padding: .3em;
+  background-color: grey;
+  margin: .6em .4em 3em .4em;
+  border-radius: 2em;
+}
+
+.venueImg {
+  /*display: none;*/
+  width: 100%;
+  height: 15em;
+  background-color: white;
+  border-radius: 2em;
+}
+
+.venueName {
+  font-family: 'Shojumaru', cursive;
+  color: white;
+}
+
+.venueFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .4em;
+}
+
+.venueTableRowHead {
+  text-align: left;
+  font-family: 'Shojumaru', cursive;
+}
+
+.venueTableCell {
+  text-align: right;
+font-family: 'Roboto', sans-serif;
+}
+
+.venueTable {
+  /*display: none;*/
+  background-color: #FEE994;
+}
+
+#venueFinal {
+  background-color: #FDD73F;
+}
+
+#venueBronze {
+  background-color: #C0C0C0;
+}
+
+#venueQF {
+  background-color: #CD7F32;
+}
+
+#venuePool1 {
+  background-color: #FD3FE3;
+}
+
+#venuePool2{
+  background-color: #2EDCFE;
+}
+
+#yokoImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/11/NISSANSTADIUM20080608.JPG');
+  background-size: cover;
+}
+#tokImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Ajinomoto_Stadium_2018-13.jpg');
+  background-size: cover;
+}
+#oitImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/af/%C5%8Cita_Stadium_with_its_roof_closed.jpg');
+  background-size: cover;
+}
+#shizImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d7/Ecopa030304.jpg');
+  background-size: cover;
+}
+#hanaImg {
+  background-image: url('https://i.redd.it/o7p64fscq8e11.jpg');
+  background-size: cover;
+}
+#fukokImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/86/Level5_Stadium_03.JPG');
+  background-size: cover;
+}
+#toyImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Nagoya_Grampus_game_in_Toyota_Stadium_100814.JPG');
+  background-size: cover;
+}
+#sapImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Sapporo_Dome_001.jpeg');
+  background-size: cover;
+}
+#kumImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/86/Kumamoto_kkw.JPG');
+  background-size: cover;
+}
+#kobImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f7/Kobe_Wing_Stadium_20131222.JPG');
+  background-size: cover;
+}
+#gayaImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/KumagayaStadium1.jpg');
+  background-size: cover;
+}
+#kamaImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/63/%E9%87%9C%E7%9F%B3%E9%B5%9C%E4%BD%8F%E5%B1%85%E5%BE%A9%E8%88%88%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0.jpg');
+  background-size: cover;
+}
+
+/*----------------------Page 3 ----------------------*/
+
 .flexPools {
   display: flex;
   flex-direction: column;
   border-radius: 2%;
-  background-color: #9DA3F4;
-  overflow: hidden;
+}
+
+.stage {
+  margin: 0 .5em 1em .5em;
+  border-radius: .6em;
+
+}
+
+.stage h2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .pool {
+    /*display: none;*/
     padding-left: .5em;
     padding-right: .5em;
-    padding-bottom: 1em;
-    border-top: 1px solid black;
-    font-family: cursive;
+    padding-bottom: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-radius: 4%;
+    font-family: sans-serif;
+    background-color: #FFC6FF;
+}
+
+#repechage {
+  background-color: #8CEBFF;
 }
 
 .pool h2 {
-  font-family: sans-serif;
+  font-family: 'Shojumaru', cursive;
+  color: white;
 }
 
 .pool table {
   /*display: none;*/
   width: 100%;
-  border: .25em solid black;
   border-collapse: collapse;
 }
 
 table thead {
   background-color: #BC002D;
   color: #FFFFFF;
-  border-bottom: .1em solid white;
-
 }
 
 table th {
@@ -134,17 +298,14 @@ table th {
 }
 
 .thTeam {
-  border-right: .15em solid white;
   column-width: auto;
 }
 
-table td {
+.pool td {
   width:auto;
   height: auto;
   text-align: center;
   padding-right: 0.5em;
-  border-style: none;
-  font-style: italic;
 }
 
 .team {
@@ -154,29 +315,103 @@ table td {
   height: auto;
   justify-content: space-evenly;
   padding-top: 1.6em;
-  font-family: sans-serif;
+  font-family: 'Shojumaru', sans-serif;
   font-weight: bold;
+  font-style: normal;
 
 }
 
 .icon {
   width: 4em;
   height: 2.8em;
-  padding-right: .5em;
+  padding-right: .2em;
   padding-left: .2em;
   border-radius: 100% 50%;
   position: relative;
   bottom: 20%;
+  left: 1%;
+  background-position: center;
+  background-size: cover;
+}
+
+#jpIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg');
+}
+#irIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/IRFU_flag.svg');
+}
+#ruIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg');
+}
+#samIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg');
+}
+#scoIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg');
+}
+#canIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg');
+}
+#itIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg');
+}
+#namIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg');
+}
+#nzIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg');
+}
+#saIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg');
+}
+#argIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg');
+}
+#enIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg');
+}
+#frIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg');
+}
+#tgIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg');
+}
+#usIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg');
+}
+#ausIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg');
+}
+#fjIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg');
+}
+#geoIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg');
+}
+#uryIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg');
+}
+#walIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Wales_%281959%E2%80%93present%29.svg');
+}
+#gerIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg');
+}
+#hkIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg');
+}
+#kenIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg');
 }
 
 
 .tableDarkGreen {
-  background-color: #0C9B33;
+  background-color: #72D48C;
   color: #FFFFFF;
 }
 
 .tableLightGreen {
-  background-color: #72D48C;
+  background-color: #75C385;
   color: #FFFFFF;
 }
 
@@ -203,6 +438,20 @@ table td {
 tbody tr:hover {
   color: yellow;
 }
+
+#qual {
+  background-color: #2EDCFE;
+}
+#rwc {
+  background-color: #FD3FE3;
+  padding-bottom: .4em;
+}
+#knockout {
+  background-color: #FDD73F;
+}
+
+/*---------------------Page 4 --------------------*/
+
 
 footer {
   background-color: #BC002D;
@@ -247,11 +496,30 @@ footer {
     *{
       max-width: 100%;
     }
-    header {background-color: #BC002D;
+    header {
+      height: 6em;
+      background-color: #BC002D;
+    }
+
+    #menu-button-open {
+      display: none;
     }
 
     body {
       background-color: #EEEEEE;
+  }
+
+  nav {
+    margin: 0;
+    display: flex;
+    width: 100%;
+  }
+
+  nav a {
+    display: inline-flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0;
   }
 
   .thFull{
