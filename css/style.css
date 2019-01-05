@@ -4,17 +4,23 @@
   padding: 0;
   margin: 0;
   max-width: 499px;
+  font-family: 'Roboto', helvetica, arial, sans-serif;
+}
+
+html {
+  height: 100%;
 }
 
 header {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-content: baseline;
+  align-items: center;
   background-color: #BC002D;
   padding-top: .5em;
   padding-bottom: .5em;
-  height: 2.5em;
+  margin-bottom: 2em;
+  height: 2.5%;
   color: #FFFFFF;
   width: 100%;
   box-shadow: .1em .05em .1em .05em rgba(0,0,0,0.75);
@@ -24,16 +30,17 @@ header {
   padding-left: .4em;
   color: #FFFFFF;
   font-family: 'Shojumaru', cursive;
-  font-size: 1.8em;
+  font-size: 130%;
 }
 
 #menu-button-open {
   display: flex;
   padding-right: .5em;
   padding-left: .5em;
+  padding-bottom: .5em;
   margin-right: .2em;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
   border: 1.2px solid #FFFFFF;
   border-radius: 5px;
 }
@@ -62,7 +69,6 @@ header {
 }
 
 #menutxt {
-  font-family: sans-serif;
   margin-top: 10px;
 }
 
@@ -105,8 +111,8 @@ body{
   background-color: #FFFFFF;
 }
 
-h1 {
-font-family: 'Roboto', sans-serif;
+.contentHead {
+  color: #BC002D;
 }
 
 /*---------------------Homepage ---------------------*/
@@ -141,7 +147,7 @@ font-family: 'Roboto', sans-serif;
   border-radius: 2em;
 }
 
-.venueName {
+.venueName h2 {
   font-family: 'Shojumaru', cursive;
   color: white;
 }
@@ -266,7 +272,6 @@ font-family: 'Roboto', sans-serif;
     margin-bottom: 2em;
     margin-top: 2em;
     border-radius: 4%;
-    font-family: sans-serif;
     background-color: #FFC6FF;
 }
 
@@ -304,7 +309,7 @@ table th {
 .pool td {
   width:auto;
   height: auto;
-  text-align: center;
+  text-align: right;
   padding-right: 0.5em;
 }
 
@@ -315,10 +320,12 @@ table th {
   height: auto;
   justify-content: space-evenly;
   padding-top: 1.6em;
-  font-family: 'Shojumaru', sans-serif;
   font-weight: bold;
   font-style: normal;
+}
 
+.tdShort, .tdFull {
+  font-family: 'Shojumaru', cursive;
 }
 
 .icon {
@@ -452,14 +459,214 @@ tbody tr:hover {
 
 /*---------------------Page 4 --------------------*/
 
+.filterBox {
+  margin: 2em .5em 2em .5em;
+  display: flex;
+  justify-content: center;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  background-color: #BC002D;
+  border-radius: .6em;
+}
 
+.filterBy {
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin: .6em .4em .6em .4em;
+  border-top-left-radius: .6em;
+  border-top-right-radius: .6em;
+}
+
+.filterButton {
+  display: flex;
+  color: #BC002D;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: grey solid .2px;
+}
+
+.filterBy:hover .filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filters {
+  display: none;
+}
+
+.filter {
+  display: block;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: white;
+  border-bottom: grey solid .2px;
+}
+
+.filter:hover {
+  background-color: #BC002D;
+  color: white;
+}
+
+.filter:last-child:hover {
+  border-bottom-color: #BC002D;
+}
+
+.dateButtons {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+}
+
+#dateLeft {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+
+  border-right:18px solid blue;
+}
+
+#dateRight {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+
+  border-left: 18px solid green;
+}
+
+.matches {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.dateDivider {
+  background-color: #FD3FE3;
+  padding-bottom: .1em;
+  margin: 2em .5em 4em .5em;
+  border-radius: 1em;
+}
+
+.dateHead {
+  display: flex;
+  height: 3em;
+  padding-bottom: .4em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  text-align: center;
+}
+
+.dateContainer{
+  background-color: #FFC6FF;
+  padding-top: .6em;
+  margin: 0 .6em .6em .6em;
+  border-radius: 1em;
+}
+
+.matchContainer {
+padding-bottom: 1em;
+}
+
+.match {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.team1, .team2{
+  font-family: 'Shojumaru', cursive;
+}
+
+.team1 {
+  padding-left: .4em;
+}
+
+.team2 {
+  padding-right: .4em;
+}
+
+.matchIcon {
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
+.teamLeftIcon, .teamRightIcon {
+  width: 3.2em;
+  height: 2em;
+  border-radius: 100% 50%;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
+}
+
+.timeResult {
+  display: flex;
+  height: 1.6em;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin-left: .22em;
+  margin-right: .22em;
+  background-color: #BC002D;
+  color: #FFFFFF;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: .8em;
+  padding-left: .2em;
+  padding-right: .2em;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+#Oct19, #Oct20 {
+  background-color: #7800F0;
+}
+
+#Oct26, #Oct27 {
+  background-color: #C0C0C0;
+}
+
+#Nov01 {
+  background-color: #CD7F32;
+}
+
+#Nov02 {
+  background-color: #FDD73F;
+}
+
+
+/*---------------------Footer--------------------*/
 footer {
   background-color: #BC002D;
   width: 100%;
-  height: 2.5em;
+  height: 8em;
   margin-top: 2em;
   position: relative;
-  box-shadow:
+  box-shadow: ;
+  }
+
+  .footerNav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footerNav ul {
+    display: flex;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 500px) {
@@ -499,6 +706,7 @@ footer {
     header {
       height: 6em;
       background-color: #BC002D;
+      margin-bottom: 0;
     }
 
     #menu-button-open {
