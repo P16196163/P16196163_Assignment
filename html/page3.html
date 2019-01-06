@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 
 <head>
   <title>Page 3</title>
@@ -8,813 +8,886 @@
 
 <body>
   <header>
-      <h1 id="title">Japan 19 日本</h1>
+    <div class="gridLeft">
+    </div>
 
-      <div id="menu-button-open">
-        <div id="menutxt">MENU</div>
-        <div id="buttons">
-          <div class="button"></div>
-          <div class="button"></div>
-          <div class="button"></div>
+    <div class="gridCenter">
+        <h1 id="title">Japan 19 日本</h1>
+
+        <div class="menu-button" id="menu-button-open">
+          <div class="menuTxt" id="menuTxt-close">MENU</div>
+          <div class="buttonsOp">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+          </div>
         </div>
+
+        <div class="menu-button" id="menu-button-close">
+          <div class="menuTxt" id="menuTxt-close">CLOSE</div>
+          <div class="buttonsCl">
+            <div class="buttonClose" id="bar1"></div>
+            <div class="buttonClose" id="bar2"></div>
+            <div class="buttonClose" id="bar3"></div>
+          </div>
+        </div>
+
       </div>
 
-      <div id="menu-button-close">
-        <div id="menutxt">MENU</div>
-        <div id="buttons">
-          <div class="button"></div>
-          <div class="button"></div>
-        </div>
-      </div>
+    <div class="gridRight">
+    </div>
+
   </header>
 
   <nav id="nav">
-    <ul>
-      <a href="index.html">Home</a>
-      <a href="page2.html">Venues</a>
-      <a href="page3.html">Standings</a>
-      <a href="page4.html">Fixtures and Results</a>
-  </ul>
-  </nav>
-
-  <h1 class="contentHead">Standings</h1>
-
-  <div class="flexPools">
-    <div class="stage" id="qual">
-      <h2>RWC 2019 Qualifying</h2>
-      <div class="pool" id="repechage">
-        <h2>Repechage Round</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                <div>Team</div>
-              </th>
-              <th>
-                <div class="thFull">Played</div>
-                <div class="thShort">Pld</div>
-              </th>
-              <th>
-                <div class="thFull">Won</div>
-                <div class="thShort">W</div>
-              </th>
-              <th>
-                <div class="thFull">Drawn</div>
-                <div class="thShort">D</div>
-              </th>
-              <th>
-                    <div class="thFull">Lost</div>
-                    <div class="thShort">L</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Tries For</div>
-                    <div class="thShort">T</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points For</div>
-                    <div class="thShort">PF</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Against</div>
-                    <div class="thShort">PA</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Difference</div>
-                    <div class="thShort">PD</div>
-              </th>
-              <th>
-                    <div class="thFull">Bonus Points</div>
-                    <div class="thShort">BP</div>
-              </th>
-              <th>
-                    <div class="thFull">Points</div>
-                    <div class="thShort">Pts</div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="tableDarkGreen">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="canIcon"></div>
-                </div>
-                <div class=tdFull>Canada 日本</div>
-                <div class=tdShort>CAN</div>
-              </td>
-              <td>3</td>
-              <td>3</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>2</td>
-              <td>14</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="gerIcon"></div>
-                </div>
-                <div class=tdFull>Germany 日本</div>
-                <div class=tdShort>GER</div>
-              </td>
-              <td>3</td>
-              <td>2</td>
-              <td>0</td>
-              <td>1</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>1</td>
-              <td>9</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="hkIcon"></div>
-                </div>
-                <div class=tdFull>Hong Kong 日本</div>
-                <div class=tdShort>HKG</div>
-              </td>
-              <td>3</td>
-              <td>1</td>
-              <td>0</td>
-              <td>2</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>1</td>
-              <td>5</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="kenIcon"></div>
-                </div>
-                <div class=tdFull>Kenya 日本</div>
-                <div class=tdShort>KEN</div>
-              </td>
-              <td>3</td>
-              <td>0</td>
-              <td>0</td>
-              <td>3</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="gridLeft">
     </div>
-    <div class="stage" id="rwc">
-      <h2>RWC 2019 Pool Stage</h2>
-      <div class="pool" id="Pool_A">
-        <h2>Pool A</h2>
-        <table>
-          <thead>
-            <tr>
-              <th scope="col" class="thTeam">
-                <div>Team</div>
-              </th>
-              <th scope="col">
-                <div class="thFull">Played</div>
-                <div class="thShort">Pld</div>
-              </th>
-              <th scope="col">
-                <div class="thFull">Won</div>
-                <div class="thShort">W</div>
-              </th>
-              <th scope="col">
-                <div class="thFull">Drawn</div>
-                <div class="thShort">D</div>
-              </th>
-              <th>
-                <div class="thFull">Lost</div>
-                <div class="thShort">L</div>
-              </th>
-              <th scope="col" class="hideSmall">
-                <div class="thFull">Tries For</div>
-                <div class="thShort">T</div>
-              </th>
-              <th scope="col" class="hideSmall">
-                <div class="thFull">Points For</div>
-                <div class="thShort">PF</div>
-              </th>
-              <th scope="col" class="hideSmall">
-                <div class="thFull">Points Against</div>
-                <div class="thShort">PA</div>
-              </th>
-              <th scope="col" class="hideSmall">
-                <div class="thFull">Points Difference</div>
-                <div class="thShort">PD</div>
-              </th>
-              <th scope="col">
-                <div class="thFull">Bonus Points</div>
-                <div class="thShort">BP</div>
-              </th>
-              <th scope="col">
-                <div class="thFull">Points</div>
-                <div class="thShort">Pts</div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="tableDarkGreen">
-              <td class="team">
-                <div class="tableIcon">
-                  <div class="icon" id="jpIcon"></div>
-                </div>
-                <div class=tdFull>Japan 日本</div>
-                <div class=tdShort>JPN</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableLightGreen">
-              <td class="team">
-                <!---->
-                <div class="tableIcon">
-                  <div class="icon" id="irIcon"></div>
-                </div>
-                <div class=tdFull>Ireland アイルランド</div>
-                <div class=tdShort>IRL</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div class="tableIcon">
-                  <div class="icon" id="ruIcon"></div>
-                </div>
-                <div class="tdFull">Russia ロシア</div>
-                <div class=tdShort>RUS</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div class="tableIcon">
-                  <div class="icon" id="samIcon"></div>
-                </div>
-                <div class="tdFull">Samoa サモア</div>
-                <div class=tdShort>SAM</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div class="tableIcon">
-                  <div class="icon" id="scoIcon"></div>
-                </div>
-                <div class="tdFull">Scotland スコットランド</div>
-                <div class=tdShort>SCO</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
-      <div class="pool" id="Pool_B">
-        <h2>Pool B</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                <div>Team</div>
-              </th>
-              <th>
-                <div class="thFull">Played</div>
-                <div class="thShort">Pld</div>
-              </th>
-              <th>
-                <div class="thFull">Won</div>
-                <div class="thShort">W</div>
-              </th>
-              <th>
-                <div class="thFull">Drawn</div>
-                <div class="thShort">D</div>
-              </th>
-              <th>
-                    <div class="thFull">Lost</div>
-                    <div class="thShort">L</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Tries For</div>
-                    <div class="thShort">T</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points For</div>
-                    <div class="thShort">PF</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Against</div>
-                    <div class="thShort">PA</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Difference</div>
-                    <div class="thShort">PD</div>
-              </th>
-              <th>
-                    <div class="thFull">Bonus Points</div>
-                    <div class="thShort">BP</div>
-              </th>
-              <th>
-                    <div class="thFull">Points</div>
-                    <div class="thShort">Pts</div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="tableDarkGreen">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="canIcon"></div>
-                </div>
-                <div class=tdFull>Canada 日本</div>
-                <div class=tdShort>CAN</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableLightGreen">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="itIcon"></div>
-                </div>
-                <div class=tdFull>Italy 日本</div>
-                <div class=tdShort>ITA</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="namIcon"></div>
-                </div>
-                <div class=tdFull>Namibia 日本</div>
-                <div class=tdShort>NAM</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="nzIcon"></div>
-                </div>
-                <div class=tdFull>New Zealand 日本</div>
-                <div class=tdShort>NZL</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="saIcon"></div>
-                </div>
-                <div class=tdFull>South Africa 日本</div>
-                <div class=tdShort>RSA</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="pool" id="Pool_C">
-        <h2>Pool C</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                <div>Team</div>
-              </th>
-              <th>
-                <div class="thFull">Played</div>
-                <div class="thShort">Pld</div>
-              </th>
-              <th>
-                <div class="thFull">Won</div>
-                <div class="thShort">W</div>
-              </th>
-              <th>
-                <div class="thFull">Drawn</div>
-                <div class="thShort">D</div>
-              </th>
-              <th>
-                    <div class="thFull">Lost</div>
-                    <div class="thShort">L</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Tries For</div>
-                    <div class="thShort">T</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points For</div>
-                    <div class="thShort">PF</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Against</div>
-                    <div class="thShort">PA</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Difference</div>
-                    <div class="thShort">PD</div>
-              </th>
-              <th>
-                    <div class="thFull">Bonus Points</div>
-                    <div class="thShort">BP</div>
-              </th>
-              <th>
-                    <div class="thFull">Points</div>
-                    <div class="thShort">Pts</div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="tableDarkGreen">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="argIcon"></div>
-                </div>
-                <div class=tdFull>Argentina 日本</div>
-                <div class=tdShort>ARG</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableLightGreen">
-              <td class="team">
-                  <!---->
-                  <div>
-                    <div class="icon" id="enIcon"></div>
-                  </div>
-                <div class=tdFull>England 日本</div>
-                <div class=tdShort>ENG</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="frIcon"></div>
-                </div>
-                <div class=tdFull>France 日本</div>
-                <div class=tdShort>FRA</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="tgIcon"></div>
-                </div>
-                <div class=tdFull>Tonga 日本</div>
-                <div class=tdShort>TON</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="usIcon"></div>
-                </div>
-                <div class=tdFull>United States 日本</div>
-                <div class=tdShort>USA</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="pool" id="Pool_D">
-        <h2>Pool D</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                <div>Team</div>
-              </th>
-              <th>
-                <div class="thFull">Played</div>
-                <div class="thShort">Pld</div>
-              </th>
-              <th>
-                <div class="thFull">Won</div>
-                <div class="thShort">W</div>
-              </th>
-              <th>
-                <div class="thFull">Drawn</div>
-                <div class="thShort">D</div>
-              </th>
-              <th>
-                    <div class="thFull">Lost</div>
-                    <div class="thShort">L</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Tries For</div>
-                    <div class="thShort">T</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points For</div>
-                    <div class="thShort">PF</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Against</div>
-                    <div class="thShort">PA</div>
-              </th>
-              <th class="hideSmall">
-                    <div class="thFull">Points Difference</div>
-                    <div class="thShort">PD</div>
-              </th>
-              <th>
-                    <div class="thFull">Bonus Points</div>
-                    <div class="thShort">BP</div>
-              </th>
-              <th>
-                    <div class="thFull">Points</div>
-                    <div class="thShort">Pts</div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="tableDarkGreen">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="ausIcon"></div>
-                </div>
-                <div class=tdFull>Australia 日本</div>
-                <div class=tdShort>AUS</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableLightGreen">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="fjIcon"></div>
-                </div>
-                <div class=tdFull>Fiji 日本</div>
-                <div class=tdShort>FJI</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="geoIcon"></div>
-                </div>
-                <div class=tdFull>Georgia 日本</div>
-                <div class=tdShort>GEO</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-                <div>
-                  <div class="icon" id="uryIcon"></div>
-                </div>
-                <div class=tdFull>Uruguay 日本</div>
-                <div class=tdShort>URY</div>
-              </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr class="tableClear">
-              <td class="team">
-                <!---->
-               <div>
-                  <div class="icon" id="walIcon"></div>
-               </div>
-               <div class=tdFull>Wales 日本</div>
-               <div class=tdShort>WAL</div>
-             </td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td class="hideSmall">0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="stage" id="knockout">
-      <h2>RWC 2019 knockout Stage</h2>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footerNav">
-      <h3 class="footerHead">Navigation</h3>
-      <ul>
+    <div class="gridCenter">
+      <ul class="navBox">
         <a href="index.html">Home</a>
         <a href="page2.html">Venues</a>
         <a href="page3.html">Standings</a>
         <a href="page4.html">Fixtures and Results</a>
       </ul>
+   </div>
+
+    <div class="gridRight">
+    </div>
+  </nav>
+
+  <div id="pageContent">
+    <div class="gridLeft">
+    </div>
+
+    <div class="gridCenter">
+      <h1 class="contentHead">Standings</h1>
+
+      <div class="flexPools">
+        <div class="stage" id="qual">
+          <h2 class="stageHead" id="qualHead">RWC 2019 Qualifying</h2>
+          <div class="pool" id="repechage">
+            <h2 class="poolHead">Repechage Round</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>Team</div>
+                  </th>
+                  <th>
+                    <div class="thFull">Played</div>
+                    <div class="thShort">Pld</div>
+                  </th>
+                  <th>
+                    <div class="thFull">Won</div>
+                    <div class="thShort">W</div>
+                  </th>
+                  <th>
+                    <div class="thFull">Drawn</div>
+                    <div class="thShort">D</div>
+                  </th>
+                  <th>
+                        <div class="thFull">Lost</div>
+                        <div class="thShort">L</div>
+                  </th>
+                  <th class="hideSmall">
+                        <div class="thFull">Tries For</div>
+                        <div class="thShort">T</div>
+                  </th>
+                  <th class="hideSmall">
+                        <div class="thFull">Points For</div>
+                        <div class="thShort">PF</div>
+                  </th>
+                  <th class="hideSmall">
+                        <div class="thFull">Points Against</div>
+                        <div class="thShort">PA</div>
+                  </th>
+                  <th class="hideSmall">
+                        <div class="thFull">Points Difference</div>
+                        <div class="thShort">PD</div>
+                  </th>
+                  <th>
+                        <div class="thFull">Bonus Points</div>
+                        <div class="thShort">BP</div>
+                  </th>
+                  <th>
+                        <div class="thFull">Points</div>
+                        <div class="thShort">Pts</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tableDarkGreen">
+                  <td class="team">
+                    <!---->
+                    <div>
+                      <div class="icon" id="canIcon"></div>
+                    </div>
+                    <div class=tdFull>
+                      <div class="latinName">Canada</div>
+                      <div class="japName">日本</div>
+                    </div>
+                    <div class=tdShort>CAN</div>
+                  </td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td>2</td>
+                  <td>14</td>
+                </tr>
+                <tr class="tableClear">
+                  <td class="team">
+                    <!---->
+                    <div>
+                      <div class="icon" id="gerIcon"></div>
+                    </div>
+                    <div class=tdFull>
+                      <div class="latinName">Germany</div>
+                      <div class="japName">日本</div>
+                    </div>
+                    <div class=tdShort>GER</div>
+                  </td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td>1</td>
+                  <td>9</td>
+                </tr>
+                <tr class="tableClear">
+                  <td class="team">
+                    <!---->
+                    <div>
+                      <div class="icon" id="hkIcon"></div>
+                    </div>
+                    <div class=tdFull>
+                      <div class="latinName">Hong Kong</div>
+                      <div class="japName">日本</div>
+                    </div>
+                    <div class=tdShort>HKG</div>
+                  </td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr class="tableClear">
+                  <td class="team">
+                    <!---->
+                    <div>
+                      <div class="icon" id="kenIcon"></div>
+                    </div>
+                    <div class=tdFull>
+                      <div class="latinName">Kenya</div>
+                      <div class="japName">日本</div>
+                    </div>
+                    <div class=tdShort>KEN</div>
+                  </td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td class="hideSmall">0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="stage" id="rwc">
+          <h2 class="stageHead" id="rwcHead">RWC 2019 Pool Stage</h2>
+          <div id="pools">
+
+            <div class="pool" id="Pool_A">
+              <h2 class="poolHead" id="headA">Pool A</h2>
+              <table id="tableA">
+                <thead>
+                  <tr>
+                    <th scope="col" class="thTeam">
+                      <div>Team</div>
+                    </th>
+                    <th scope="col">
+                      <div class="thFull">Played</div>
+                      <div class="thShort">Pld</div>
+                    </th>
+                    <th scope="col">
+                      <div class="thFull">Won</div>
+                      <div class="thShort">W</div>
+                    </th>
+                    <th scope="col">
+                      <div class="thFull">Drawn</div>
+                      <div class="thShort">D</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Lost</div>
+                      <div class="thShort">L</div>
+                    </th>
+                    <th scope="col" class="hideSmall">
+                      <div class="thFull">Tries For</div>
+                      <div class="thShort">T</div>
+                    </th>
+                    <th scope="col" class="hideSmall">
+                      <div class="thFull">Points For</div>
+                      <div class="thShort">PF</div>
+                    </th>
+                    <th scope="col" class="hideSmall">
+                      <div class="thFull">Points Against</div>
+                      <div class="thShort">PA</div>
+                    </th>
+                    <th scope="col" class="hideSmall">
+                      <div class="thFull">Points Difference</div>
+                      <div class="thShort">PD</div>
+                    </th>
+                    <th scope="col">
+                      <div class="thFull">Bonus Points</div>
+                      <div class="thShort">BP</div>
+                    </th>
+                    <th scope="col">
+                      <div class="thFull">Points</div>
+                      <div class="thShort">Pts</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tableDarkGreen">
+                    <td class="team">
+                      <div class="tableIcon">
+                        <div class="icon" id="jpIcon"></div>
+                      </div>
+                      <div class=tdFull>Japan 日本</div>
+                      <div class=tdMed>Japan</div>
+                      <div class=tdShort>JPN</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableLightGreen">
+                    <td class="team">
+                      <!---->
+                      <div class="tableIcon">
+                        <div class="icon" id="irIcon"></div>
+                      </div>
+                      <div class=tdFull>Ireland アイルランド</div>
+                      <div class=tdMed>Ireland</div>
+                      <div class=tdShort>IRL</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div class="tableIcon">
+                        <div class="icon" id="ruIcon"></div>
+                      </div>
+                      <div class="tdFull">Russia ロシア</div>
+                      <div class=tdMed>Russia</div>
+                      <div class=tdShort>RUS</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div class="tableIcon">
+                        <div class="icon" id="samIcon"></div>
+                      </div>
+                      <div class="tdFull">Samoa サモア</div>
+                      <div class=tdMed>Samoa</div>
+                      <div class=tdShort>SAM</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div class="tableIcon">
+                        <div class="icon" id="scoIcon"></div>
+                      </div>
+                      <div class="tdFull">Scotland スコットランド</div>
+                      <div class=tdMed>Scotland</div>
+                      <div class=tdShort>SCO</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pool" id="Pool_B">
+              <h2 class="poolHead" id="headB">Pool B</h2>
+              <table id="tableB">
+                <thead>
+                  <tr>
+                    <th>
+                      <div>Team</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Played</div>
+                      <div class="thShort">Pld</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Won</div>
+                      <div class="thShort">W</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Drawn</div>
+                      <div class="thShort">D</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Lost</div>
+                          <div class="thShort">L</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Tries For</div>
+                          <div class="thShort">T</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points For</div>
+                          <div class="thShort">PF</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points Against</div>
+                          <div class="thShort">PA</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points Difference</div>
+                          <div class="thShort">PD</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Bonus Points</div>
+                          <div class="thShort">BP</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Points</div>
+                          <div class="thShort">Pts</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tableDarkGreen">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="canIcon"></div>
+                      </div>
+                      <div class=tdFull>Canada 日本</div>
+                      <div class=tdMed>Canada</div>
+                      <div class=tdShort>CAN</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableLightGreen">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="itIcon"></div>
+                      </div>
+                      <div class=tdFull>Italy 日本</div>
+                      <div class=tdMed>Italy</div>
+                      <div class=tdShort>ITA</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="namIcon"></div>
+                      </div>
+                      <div class=tdFull>Namibia 日本</div>
+                      <div class=tdMed>Namibia</div>
+                      <div class=tdShort>NAM</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="nzIcon"></div>
+                      </div>
+                      <div class=tdFull>New Zealand 日本</div>
+                      <div class=tdMed>New Zealand</div>
+                      <div class=tdShort>NZL</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="saIcon"></div>
+                      </div>
+                      <div class=tdFull>South Africa 日本</div>
+                      <div class=tdMed>South Africa</div>
+                      <div class=tdShort>RSA</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pool" id="Pool_C">
+              <h2 class="poolHead" id="headC">Pool C</h2>
+              <table id="tableC">
+                <thead>
+                  <tr>
+                    <th>
+                      <div>Team</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Played</div>
+                      <div class="thShort">Pld</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Won</div>
+                      <div class="thShort">W</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Drawn</div>
+                      <div class="thShort">D</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Lost</div>
+                          <div class="thShort">L</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Tries For</div>
+                          <div class="thShort">T</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points For</div>
+                          <div class="thShort">PF</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points Against</div>
+                          <div class="thShort">PA</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points Difference</div>
+                          <div class="thShort">PD</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Bonus Points</div>
+                          <div class="thShort">BP</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Points</div>
+                          <div class="thShort">Pts</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tableDarkGreen">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="argIcon"></div>
+                      </div>
+                      <div class=tdFull>Argentina 日本</div>
+                      <div class=tdMed>Argentina</div>
+                      <div class=tdShort>ARG</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableLightGreen">
+                    <td class="team">
+                        <!---->
+                        <div>
+                          <div class="icon" id="enIcon"></div>
+                        </div>
+                      <div class=tdFull>England 日本</div>
+                      <div class=tdMed>England</div>
+                      <div class=tdShort>ENG</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="frIcon"></div>
+                      </div>
+                      <div class=tdFull>France 日本</div>
+                      <div class=tdMed>France</div>
+                      <div class=tdShort>FRA</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="tgIcon"></div>
+                      </div>
+                      <div class=tdFull>Tonga 日本</div>
+                      <div class=tdMed>Tonga</div>
+                      <div class=tdShort>TON</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="usIcon"></div>
+                      </div>
+                      <div class=tdFull>United States 日本</div>
+                      <div class=tdMed>United States</div>
+                      <div class=tdShort>USA</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pool" id="Pool_D">
+              <h2 class="poolHead" id="headD">Pool D</h2>
+              <table id="tableD">
+                <thead>
+                  <tr>
+                    <th>
+                      <div>Team</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Played</div>
+                      <div class="thShort">Pld</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Won</div>
+                      <div class="thShort">W</div>
+                    </th>
+                    <th>
+                      <div class="thFull">Drawn</div>
+                      <div class="thShort">D</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Lost</div>
+                          <div class="thShort">L</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Tries For</div>
+                          <div class="thShort">T</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points For</div>
+                          <div class="thShort">PF</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points Against</div>
+                          <div class="thShort">PA</div>
+                    </th>
+                    <th class="hideSmall">
+                          <div class="thFull">Points Difference</div>
+                          <div class="thShort">PD</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Bonus Points</div>
+                          <div class="thShort">BP</div>
+                    </th>
+                    <th>
+                          <div class="thFull">Points</div>
+                          <div class="thShort">Pts</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tableDarkGreen">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="ausIcon"></div>
+                      </div>
+                      <div class=tdFull>Australia 日本</div>
+                      <div class=tdMed>Australia</div>
+                      <div class=tdShort>AUS</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableLightGreen">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="fjIcon"></div>
+                      </div>
+                      <div class=tdFull>Fiji 日本</div>
+                      <div class=tdMed>Fiji</div>
+                      <div class=tdShort>FJI</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="geoIcon"></div>
+                      </div>
+                      <div class=tdFull>Georgia 日本</div>
+                      <div class=tdMed>Georgia</div>
+                      <div class=tdShort>GEO</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                      <div>
+                        <div class="icon" id="uryIcon"></div>
+                      </div>
+                      <div class=tdFull>Uruguay 日本</div>
+                      <div class=tdMed>Uruguay</div>
+                      <div class=tdShort>URY</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="tableClear">
+                    <td class="team">
+                      <!---->
+                     <div>
+                        <div class="icon" id="walIcon"></div>
+                     </div>
+                     <div class=tdFull>Wales 日本</div>
+                     <div class=tdMed>Wales</div>
+                     <div class=tdShort>WAL</div>
+                   </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td class="hideSmall">0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="stage" id="knockout">
+          <h2 class="stageHead" id="knockoutHead">RWC 2019 knockout Stage</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="gridRight">
+    </div>
+  </div>
+
+  <footer>
+    <div class="gridLeft">
+    </div>
+
+    <div class="gridCenter">
+      <div class="footerNav">
+        <h3 class="footerHead">Navigation</h3>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="page2.html">Venues</a>
+          <a href="page3.html">Standings</a>
+          <a href="page4.html">Fixtures and Results</a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gridRight">
     </div>
   </footer>
 
+  <script src="../js/page3scripts.js" type="text/javascript"></script>
   <script src="../js/scripts.js" type="text/javascript"></script>
 </body>
 

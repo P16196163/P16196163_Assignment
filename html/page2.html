@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 
 <head>
   <title>Page 2</title>
@@ -8,302 +8,340 @@
 
 <body>
   <header>
-      <h1 id="title">Japan 19 日本</h1>
+    <div class="gridLeft">
+    </div>
 
-      <div id="menu-button-open">
-        <div id="menutxt">MENU</div>
-        <div id="buttons">
-          <div class="button"></div>
-          <div class="button"></div>
-          <div class="button"></div>
+    <div class="gridCenter">
+        <h1 id="title">Japan 19 日本</h1>
+
+        <div class="menu-button" id="menu-button-open">
+          <div class="menuTxt" id="menuTxt-close">MENU</div>
+          <div class="buttonsOp">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+          </div>
         </div>
+
+        <div class="menu-button" id="menu-button-close">
+          <div class="menuTxt" id="menuTxt-close">CLOSE</div>
+          <div class="buttonsCl">
+            <div class="buttonClose" id="bar1"></div>
+            <div class="buttonClose" id="bar2"></div>
+            <div class="buttonClose" id="bar3"></div>
+          </div>
+        </div>
+
       </div>
 
-      <div id="menu-button-close">
-        <div id="menutxt">MENU</div>
-        <div id="buttons">
-          <div class="button"></div>
-          <div class="button"></div>
-        </div>
-      </div>
+    <div class="gridRight">
+    </div>
+
   </header>
 
   <nav id="nav">
-    <ul>
-      <a href="index.html">Home</a>
-      <a href="page2.html">Venues</a>
-      <a href="page3.html">Standings</a>
-      <a href="page4.html">Fixtures and Results</a>
-  </ul>
-  </nav>
-
-  <h1 class="contentHead">Venues</h1>
-
-  <div class="map">
-    <div id=venueMap></div>
-  </div>
-
-  <div class="venue" id="venueFinal">
-    <div class="venueFlex">
-      <div class="venueImg" id="yokoImg"></div>
-      <div class="venueName"><h2>International Stadium Yokohama</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">72,327</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Yokohama</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage, Semi Finals, Final</div></td>
-        </tr>
-      </table>
+    <div class="gridLeft">
     </div>
-  </div>
 
-  <div class="venue" id="venueBronze">
-    <div class="venueFlex">
-      <div class="venueImg" id="tokImg"></div>
-      <div class="venueName"><h2>Tokyo Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">49,970</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Chōfu, Tokyo</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage, Quarter Finals, Bronze Final</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venueQF">
-    <div class="venueFlex">
-      <div class="venueImg" id="oitImg"></div>
-      <div class="venueName"><h2>Oita Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">40,000</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Ōita</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage, Quarter Finals</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool1">
-    <div class="venueFlex">
-      <div class="venueImg" id="shizImg"></div>
-      <div class="venueName"><h2>Shizuoka Stadium Ecopa</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">50,889</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Fukuroi</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool2">
-    <div class="venueFlex">
-      <div class="venueImg" id="hanaImg"></div>
-      <div class="venueName"><h2>Hanazono Rugby Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">30,000</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Higashiōsaka</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool1">
-    <div class="venueFlex">
-      <div class="venueImg" id="fukokImg"></div>
-      <div class="venueName"><h2>Fukuoka Hakatanomori Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">22,563</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Fukuoka</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool2">
-    <div class="venueFlex">
-      <div class="venueImg" id="toyImg"></div>
-      <div class="venueName"><h2>City of Toyota Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">45,000</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Toyota</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool1">
-    <div class="venueFlex">
-      <div class="venueImg" id="sapImg"></div>
-      <div class="venueName"><h2>Sapporo Dome</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">41,410</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Sapporo</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool2">
-    <div class="venueFlex">
-      <div class="venueImg" id="kumImg"></div>
-      <div class="venueName"><h2>Kumamoto Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">32,000</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Kumamoto</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool1">
-    <div class="venueFlex">
-      <div class="venueImg" id="kobImg"></div>
-      <div class="venueName"><h2>Kobe Misaki Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">30,132</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Kobe</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool2">
-    <div class="venueFlex">
-      <div class="venueImg" id="gayaImg"></div>
-      <div class="venueName"><h2>Kumagaya Rugby Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">24,000</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Kumugaya</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="venue" id="venuePool1">
-    <div class="venueFlex">
-      <div class="venueImg" id="kamaImg"></div>
-      <div class="venueName"><h2>Kamaishi Recovery Memorial Stadium</h2></div>
-      <table class="venueTable">
-        <tr>
-          <td><div class="venueTableRowHead">Capacity:</div></td>
-          <td><div class="venueTableCell">16,187</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">City:</div></td>
-          <td><div class="venueTableCell">Kamaishi</div></td>
-        </tr>
-        <tr>
-          <td><div class="venueTableRowHead">Rounds:</div></td>
-          <td><div class="venueTableCell">Pool Stage</div></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footerNav">
-      <h3 class="footerHead">Navigation</h3>
-      <ul>
+    <div class="gridCenter">
+      <ul class="navBox">
         <a href="index.html">Home</a>
         <a href="page2.html">Venues</a>
         <a href="page3.html">Standings</a>
         <a href="page4.html">Fixtures and Results</a>
       </ul>
+   </div>
+
+    <div class="gridRight">
+    </div>
+  </nav>
+
+  <div id="pageContent">
+    <div class="gridLeft">
+    </div>
+
+    <div class="gridCenter">
+      <h1 class="contentHead">Venues</h1>
+
+      <div class="map">
+        <div id=venueMap></div>
+      </div>
+
+      <div class="venue" id="venueFinal">
+        <div class="venueFlex">
+          <div class="venueImg" id="yokoImg"></div>
+          <div class="venueName"><h2>International Stadium Yokohama</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">72,327</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Yokohama</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage, Semi Finals, Final</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venueBronze">
+        <div class="venueFlex">
+          <div class="venueImg" id="tokImg"></div>
+          <div class="venueName"><h2>Tokyo Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">49,970</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Chōfu, Tokyo</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage, Quarter Finals, Bronze Final</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venueQF">
+        <div class="venueFlex">
+          <div class="venueImg" id="oitImg"></div>
+          <div class="venueName"><h2>Oita Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">40,000</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Ōita</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage, Quarter Finals</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool1">
+        <div class="venueFlex">
+          <div class="venueImg" id="shizImg"></div>
+          <div class="venueName"><h2>Shizuoka Stadium Ecopa</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">50,889</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Fukuroi</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool2">
+        <div class="venueFlex">
+          <div class="venueImg" id="hanaImg"></div>
+          <div class="venueName"><h2>Hanazono Rugby Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">30,000</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Higashiōsaka</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool1">
+        <div class="venueFlex">
+          <div class="venueImg" id="fukokImg"></div>
+          <div class="venueName"><h2>Fukuoka Hakatanomori Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">22,563</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Fukuoka</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool2">
+        <div class="venueFlex">
+          <div class="venueImg" id="toyImg"></div>
+          <div class="venueName"><h2>City of Toyota Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">45,000</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Toyota</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool1">
+        <div class="venueFlex">
+          <div class="venueImg" id="sapImg"></div>
+          <div class="venueName"><h2>Sapporo Dome</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">41,410</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Sapporo</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool2">
+        <div class="venueFlex">
+          <div class="venueImg" id="kumImg"></div>
+          <div class="venueName"><h2>Kumamoto Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">32,000</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Kumamoto</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool1">
+        <div class="venueFlex">
+          <div class="venueImg" id="kobImg"></div>
+          <div class="venueName"><h2>Kobe Misaki Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">30,132</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Kobe</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool2">
+        <div class="venueFlex">
+          <div class="venueImg" id="gayaImg"></div>
+          <div class="venueName"><h2>Kumagaya Rugby Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">24,000</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Kumugaya</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="venue" id="venuePool1">
+        <div class="venueFlex">
+          <div class="venueImg" id="kamaImg"></div>
+          <div class="venueName"><h2>Kamaishi Recovery Memorial Stadium</h2></div>
+          <table class="venueTable">
+            <tr>
+              <td><div class="venueTableRowHead">Capacity:</div></td>
+              <td><div class="venueTableCell">16,187</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">City:</div></td>
+              <td><div class="venueTableCell">Kamaishi</div></td>
+            </tr>
+            <tr>
+              <td><div class="venueTableRowHead">Rounds:</div></td>
+              <td><div class="venueTableCell">Pool Stage</div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+   </div>
+    <div class="gridRight">
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="gridLeft">
+    </div>
+
+    <div class="gridCenter">
+      <div class="footerNav">
+        <h3 class="footerHead">Navigation</h3>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="page2.html">Venues</a>
+          <a href="page3.html">Standings</a>
+          <a href="page4.html">Fixtures and Results</a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gridRight">
     </div>
   </footer>
 
