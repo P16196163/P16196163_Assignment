@@ -65,23 +65,32 @@
 
     <div class="filterBox">
           <div class="filterBy">
-            <div class="filterButton">Filter By:</div>
-            <div class="filters">
-              <a class="filter">Date</a>
-              <a class="filter">Stage</a>
-              <a class="filter">Team</a>
+            <div class="filterButton" id="filterButton">Filter By:</div>
+            <div class="filters" id="filters">
+              <a class="filter" id="filterDate">Date</a>
+              <a class="filter" id="filterStage">Stage</a>
+              <a class="filter" id="filterTeam">Team</a>
            </div>
           </div>
         </div>
 
-        <div id="matches">
-          <div class="dateSelectorBox">
-            <div class="dateSelector">
-              <div id="dateLeft"></div>
-              <div>Date</div>
-              <div id="dateRight"></div>
-            </div>
+        <div class="dateSelectorBox" id="dateSelect">
+          <div class="dateSelector">
+            <div id="dateLeft"></div>
+            <div>Date</div>
+            <div id="dateRight"></div>
           </div>
+        </div>
+
+        <div class="stageSelectorBox" id="stageSelect">
+          <div class="stageSelector">
+            <div class="stageFilt" id="stageQual">Qualifying</div>
+            <div class="stageFilt" id="stagePool">Pool Stage</div>
+            <div class="stageFilt" id="stageKnockout">Knockout Stage</div>
+          </div>
+        </div>
+
+        <div id="matches">
 
           <div class="dateDivider" id="Nov11">
             <div class="dateHead">
@@ -91,7 +100,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="canIcon"></div>
+                    <div class="teamLeftIcon" id="canIcon3"></div>
                   </div>
                   <div class="team1">CAN</div>
                   <div class="timeResult" id="result">
@@ -99,7 +108,7 @@
                   </div>
                   <div class="team2">KEN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="kenIcon"></div>
+                    <div class="teamRightIcon" id="kenIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -111,7 +120,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="hkIcon"></div>
+                    <div class="teamLeftIcon" id="hkIcon2"></div>
                   </div>
                   <div class="team1">HKG</div>
                   <div class="timeResult" id="result">
@@ -119,7 +128,7 @@
                   </div>
                   <div class="team2">GER</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="gerIcon"></div>
+                    <div class="teamRightIcon" id="gerIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -138,7 +147,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="hkIcon"></div>
+                    <div class="teamLeftIcon" id="hkIcon3"></div>
                   </div>
                   <div class="team1">HKG</div>
                   <div class="timeResult" id="result">
@@ -146,7 +155,7 @@
                   </div>
                   <div class="team2">KEN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="kenIcon"></div>
+                    <div class="teamRightIcon" id="kenIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -158,7 +167,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="canIcon"></div>
+                    <div class="teamLeftIcon" id="canIcon4"></div>
                   </div>
                   <div class="team1">CAN</div>
                   <div class="timeResult" id="result">
@@ -166,7 +175,7 @@
                   </div>
                   <div class="team2">GER</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="gerIcon"></div>
+                    <div class="teamRightIcon" id="gerIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -185,7 +194,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="kenIcon"></div>
+                    <div class="teamLeftIcon" id="kenIcon2"></div>
                   </div>
                   <div class="team1">KEN</div>
                   <div class="timeResult" id="result">
@@ -193,7 +202,7 @@
                   </div>
                   <div class="team2">GER</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="gerIcon"></div>
+                    <div class="teamRightIcon" id="gerIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -205,7 +214,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="hkIcon"></div>
+                    <div class="teamLeftIcon" id="hkIcon4"></div>
                   </div>
                   <div class="team1">HKG</div>
                   <div class="timeResult" id="result">
@@ -213,7 +222,7 @@
                   </div>
                   <div class="team2">CAN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="canIcon"></div>
+                    <div class="teamRightIcon" id="canIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -232,7 +241,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="jpIcon"></div>
+                    <div class="teamLeftIcon" id="jpIcon2"></div>
                   </div>
                   <div class="team1">JPN</div>
                   <div class="timeResult" id="koTime">
@@ -240,7 +249,7 @@
                   </div>
                   <div class="team2">RUS</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="ruIcon"></div>
+                    <div class="teamRightIcon" id="ruIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -259,7 +268,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="ausIcon"></div>
+                    <div class="teamLeftIcon" id="ausIcon2"></div>
                   </div>
                   <div class="team1">AUS</div>
                   <div class="timeResult" id="koTime">
@@ -267,7 +276,7 @@
                   </div>
                   <div class="team2">FJI</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="fjIcon"></div>
+                    <div class="teamRightIcon" id="fjIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -279,7 +288,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="frIcon"></div>
+                    <div class="teamLeftIcon" id="frIcon5"></div>
                   </div>
                   <div class="team1">FRA</div>
                   <div class="timeResult" id="koTime">
@@ -287,7 +296,7 @@
                   </div>
                   <div class="team2">ARG</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="argIcon"></div>
+                    <div class="teamRightIcon" id="argIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -299,7 +308,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="nzIcon"></div>
+                    <div class="teamLeftIcon" id="nzIcon2"></div>
                   </div>
                   <div class="team1">NZL</div>
                   <div class="timeResult" id="koTime">
@@ -307,7 +316,7 @@
                   </div>
                   <div class="team2">RSA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="saIcon"></div>
+                    <div class="teamRightIcon" id="saIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -327,7 +336,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="itIcon"></div>
+                    <div class="teamLeftIcon" id="itIcon2"></div>
                   </div>
                   <div class="team1">ITA</div>
                   <div class="timeResult" id="koTime">
@@ -335,7 +344,7 @@
                   </div>
                   <div class="team2">NAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="namIcon"></div>
+                    <div class="teamRightIcon" id="namIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -347,7 +356,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="irIcon"></div>
+                    <div class="teamLeftIcon" id="irIcon3"></div>
                   </div>
                   <div class="team1">IRL</div>
                   <div class="timeResult" id="koTime">
@@ -355,7 +364,7 @@
                   </div>
                   <div class="team2">SCO</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="scoIcon"></div>
+                    <div class="teamRightIcon" id="scoIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -367,7 +376,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="enIcon"></div>
+                    <div class="teamLeftIcon" id="enIcon5"></div>
                   </div>
                   <div class="team1">ENG</div>
                   <div class="timeResult" id="koTime">
@@ -375,7 +384,7 @@
                   </div>
                   <div class="team2">TON</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="tgIcon"></div>
+                    <div class="teamRightIcon" id="tgIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -394,7 +403,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="walIcon"></div>
+                    <div class="teamLeftIcon" id="walIcon3"></div>
                   </div>
                   <div class="team1">WAL</div>
                   <div class="timeResult" id="koTime">
@@ -402,7 +411,7 @@
                   </div>
                   <div class="team2">GEO</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="geoIcon"></div>
+                    <div class="teamRightIcon" id="geoIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -421,7 +430,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="ruIcon"></div>
+                    <div class="teamLeftIcon" id="ruIcon3"></div>
                   </div>
                   <div class="team1">RUS</div>
                   <div class="timeResult" id="koTime">
@@ -429,7 +438,7 @@
                   </div>
                   <div class="team2">SAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="samIcon"></div>
+                    <div class="teamRightIcon" id="samIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -448,7 +457,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="fjIcon"></div>
+                    <div class="teamLeftIcon" id="fjIcon3"></div>
                   </div>
                   <div class="team1">FJI</div>
                   <div class="timeResult" id="koTime">
@@ -456,7 +465,7 @@
                   </div>
                   <div class="team2">URY</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="uryIcon"></div>
+                    <div class="teamRightIcon" id="uryIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -475,7 +484,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="itIcon"></div>
+                    <div class="teamLeftIcon" id="itIcon3"></div>
                   </div>
                   <div class="team1">ITA</div>
                   <div class="timeResult" id="koTime">
@@ -483,7 +492,7 @@
                   </div>
                   <div class="team2">CAN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="canIcon"></div>
+                    <div class="teamRightIcon" id="canIcon6"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -495,7 +504,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="enIcon"></div>
+                    <div class="teamLeftIcon" id="enIcon4"></div>
                   </div>
                   <div class="team1">ENG</div>
                   <div class="timeResult" id="koTime">
@@ -503,7 +512,7 @@
                   </div>
                   <div class="team2">USA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="usIcon"></div>
+                    <div class="teamRightIcon" id="usIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -522,7 +531,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="argIcon"></div>
+                    <div class="teamLeftIcon" id="argIcon2"></div>
                   </div>
                   <div class="team1">ARG</div>
                   <div class="timeResult" id="koTime">
@@ -530,7 +539,7 @@
                   </div>
                   <div class="team2">TON</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="tgIcon"></div>
+                    <div class="teamRightIcon" id="tgIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -542,7 +551,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="jpIcon"></div>
+                    <div class="teamLeftIcon" id="jpIcon3"></div>
                   </div>
                   <div class="team1">JPN</div>
                   <div class="timeResult" id="koTime">
@@ -550,7 +559,7 @@
                   </div>
                   <div class="team2">IRL</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="irIcon"></div>
+                    <div class="teamRightIcon" id="irIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -562,7 +571,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="saIcon"></div>
+                    <div class="teamLeftIcon" id="saIcon3"></div>
                   </div>
                   <div class="team1">RSA</div>
                   <div class="timeResult" id="koTime">
@@ -570,7 +579,7 @@
                   </div>
                   <div class="team2">NAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="namIcon"></div>
+                    <div class="teamRightIcon" id="namIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -589,7 +598,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="geoIcon"></div>
+                    <div class="teamLeftIcon" id="geoIcon3"></div>
                   </div>
                   <div class="team1">GEO</div>
                   <div class="timeResult" id="koTime">
@@ -597,7 +606,7 @@
                   </div>
                   <div class="team2">URY</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="uryIcon"></div>
+                    <div class="teamRightIcon" id="uryIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -609,7 +618,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="ausIcon"></div>
+                    <div class="teamLeftIcon" id="ausIcon3"></div>
                   </div>
                   <div class="team1">AUS</div>
                   <div class="timeResult" id="koTime">
@@ -617,7 +626,7 @@
                   </div>
                   <div class="team2">WAL</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="walIcon"></div>
+                    <div class="teamRightIcon" id="walIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -636,7 +645,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="scoIcon"></div>
+                    <div class="teamLeftIcon" id="scoIcon4"></div>
                   </div>
                   <div class="team1">SCO</div>
                   <div class="timeResult" id="koTime">
@@ -644,7 +653,7 @@
                   </div>
                   <div class="team2">SAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="samIcon"></div>
+                    <div class="teamRightIcon" id="samIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -663,7 +672,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="frIcon"></div>
+                    <div class="teamLeftIcon" id="frIcon2"></div>
                   </div>
                   <div class="team1">FRA</div>
                   <div class="timeResult" id="koTime">
@@ -671,7 +680,7 @@
                   </div>
                   <div class="team2">USA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="usIcon"></div>
+                    <div class="teamRightIcon" id="usIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -683,7 +692,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="nzIcon"></div>
+                    <div class="teamLeftIcon" id="nzIcon3"></div>
                   </div>
                   <div class="team1">NZL</div>
                   <div class="timeResult" id="koTime">
@@ -691,7 +700,7 @@
                   </div>
                   <div class="team2">CAN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="canIcon"></div>
+                    <div class="teamRightIcon" id="canIcon7"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -710,7 +719,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="geoIcon"></div>
+                    <div class="teamLeftIcon" id="geoIcon4"></div>
                   </div>
                   <div class="team1">GEO</div>
                   <div class="timeResult" id="koTime">
@@ -718,7 +727,7 @@
                   </div>
                   <div class="team2">FJI</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="fjIcon"></div>
+                    <div class="teamRightIcon" id="fjIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -730,7 +739,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="irIcon"></div>
+                    <div class="teamLeftIcon" id="irIcon5"></div>
                   </div>
                   <div class="team1">IRL</div>
                   <div class="timeResult" id="koTime">
@@ -738,7 +747,7 @@
                   </div>
                   <div class="team2">RUS</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="ruIcon"></div>
+                    <div class="teamRightIcon" id="ruIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -757,7 +766,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="saIcon"></div>
+                    <div class="teamLeftIcon" id="saIcon4"></div>
                   </div>
                   <div class="team1">RSA</div>
                   <div class="timeResult" id="koTime">
@@ -765,7 +774,7 @@
                   </div>
                   <div class="team2">ITA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="itIcon"></div>
+                    <div class="teamRightIcon" id="itIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -784,7 +793,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="ausIcon"></div>
+                    <div class="teamLeftIcon" id="ausIcon4"></div>
                   </div>
                   <div class="team1">AUS</div>
                   <div class="timeResult" id="koTime">
@@ -792,7 +801,7 @@
                   </div>
                   <div class="team2">URY</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="uryIcon"></div>
+                    <div class="teamRightIcon" id="uryIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -804,7 +813,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="enIcon"></div>
+                    <div class="teamLeftIcon" id="enIcon2"></div>
                   </div>
                   <div class="team1">ENG</div>
                   <div class="timeResult" id="koTime">
@@ -812,7 +821,7 @@
                   </div>
                   <div class="team2">ARG</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="argIcon"></div>
+                    <div class="teamRightIcon" id="argIcon3"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -824,7 +833,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="jpIcon"></div>
+                    <div class="teamLeftIcon" id="jpIcon4"></div>
                   </div>
                   <div class="team1">JPN</div>
                   <div class="timeResult" id="koTime">
@@ -832,7 +841,7 @@
                   </div>
                   <div class="team2">SAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="samIcon"></div>
+                    <div class="teamRightIcon" id="samIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -851,7 +860,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="nzIcon"></div>
+                    <div class="teamLeftIcon" id="nzIcon4"></div>
                   </div>
                   <div class="team1">NZL</div>
                   <div class="timeResult" id="koTime">
@@ -859,7 +868,7 @@
                   </div>
                   <div class="team2">NAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="namIcon"></div>
+                    <div class="teamRightIcon" id="namIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -871,7 +880,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="frIcon"></div>
+                    <div class="teamLeftIcon" id="frIcon3"></div>
                   </div>
                   <div class="team1">FRA</div>
                   <div class="timeResult" id="koTime">
@@ -879,7 +888,7 @@
                   </div>
                   <div class="team2">TON</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="tgIcon"></div>
+                    <div class="teamRightIcon" id="tgIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -898,7 +907,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="saIcon"></div>
+                    <div class="teamLeftIcon" id="saIcon5"></div>
                   </div>
                   <div class="team1">RSA</div>
                   <div class="timeResult" id="koTime">
@@ -906,7 +915,7 @@
                   </div>
                   <div class="team2">CAN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="canIcon"></div>
+                    <div class="teamRightIcon" id="canIcon8"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -925,7 +934,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="argIcon"></div>
+                    <div class="teamLeftIcon" id="argIcon4"></div>
                   </div>
                   <div class="team1">ARG</div>
                   <div class="timeResult" id="koTime">
@@ -933,7 +942,7 @@
                   </div>
                   <div class="team2">USA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="usIcon"></div>
+                    <div class="teamRightIcon" id="usIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -945,7 +954,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="scoIcon"></div>
+                    <div class="teamLeftIcon" id="scoIcon5"></div>
                   </div>
                   <div class="team1">SCO</div>
                   <div class="timeResult" id="koTime">
@@ -953,7 +962,7 @@
                   </div>
                   <div class="team2">RUS</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="rusIcon"></div>
+                    <div class="teamRightIcon" id="ruIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -965,7 +974,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="walIcon"></div>
+                    <div class="teamLeftIcon" id="walIcon5"></div>
                   </div>
                   <div class="team1">WAL</div>
                   <div class="timeResult" id="koTime">
@@ -973,7 +982,7 @@
                   </div>
                   <div class="team2">FJI</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="fjIcon"></div>
+                    <div class="teamRightIcon" id="fjIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -992,7 +1001,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="ausIcon"></div>
+                    <div class="teamLeftIcon" id="ausIcon5"></div>
                   </div>
                   <div class="team1">AUS</div>
                   <div class="timeResult" id="koTime">
@@ -1000,7 +1009,7 @@
                   </div>
                   <div class="team2">GEO</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="geoIcon"></div>
+                    <div class="teamRightIcon" id="geoIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1019,7 +1028,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="nzIcon"></div>
+                    <div class="teamLeftIcon" id="nzIcon5"></div>
                   </div>
                   <div class="team1">NZL</div>
                   <div class="timeResult" id="koTime">
@@ -1027,7 +1036,7 @@
                   </div>
                   <div class="team2">ITA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="itIcon"></div>
+                    <div class="teamRightIcon" id="itIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1039,7 +1048,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="enIcon"></div>
+                    <div class="teamLeftIcon" id="enIcon3"></div>
                   </div>
                   <div class="team1">ENG</div>
                   <div class="timeResult" id="koTime">
@@ -1047,7 +1056,7 @@
                   </div>
                   <div class="team2">FRA</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="frIcon"></div>
+                    <div class="teamRightIcon" id="frIcon4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1059,7 +1068,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="irIcon"></div>
+                    <div class="teamLeftIcon" id="irIcon2"></div>
                   </div>
                   <div class="team1">IRL</div>
                   <div class="timeResult" id="koTime">
@@ -1067,7 +1076,7 @@
                   </div>
                   <div class="team2">SAM</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="samIcon"></div>
+                    <div class="teamRightIcon" id="samIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1086,7 +1095,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="namIcon"></div>
+                    <div class="teamLeftIcon" id="namIcon5"></div>
                   </div>
                   <div class="team1">NAM</div>
                   <div class="timeResult" id="koTime">
@@ -1094,7 +1103,7 @@
                   </div>
                   <div class="team2">CAN</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="canIcon"></div>
+                    <div class="teamRightIcon" id="canIcon9"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1106,7 +1115,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="usIcon"></div>
+                    <div class="teamLeftIcon" id="usIcon5"></div>
                   </div>
                   <div class="team1">USA</div>
                   <div class="timeResult" id="koTime">
@@ -1114,7 +1123,7 @@
                   </div>
                   <div class="team2">TON</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="tgIcon"></div>
+                    <div class="teamRightIcon" id="tgIcon5"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1126,7 +1135,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="walIcon"></div>
+                    <div class="teamLeftIcon" id="walIcon5"></div>
                   </div>
                   <div class="team1">WAL</div>
                   <div class="timeResult" id="koTime">
@@ -1134,7 +1143,7 @@
                   </div>
                   <div class="team2">URY</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="uryIcon"></div>
+                    <div class="teamRightIcon" id="walIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1146,7 +1155,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id="jpIcon"></div>
+                    <div class="teamLeftIcon" id="jpIcon5"></div>
                   </div>
                   <div class="team1">JPN</div>
                   <div class="timeResult" id="koTime">
@@ -1154,7 +1163,7 @@
                   </div>
                   <div class="team2">SCO</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id="scoIcon"></div>
+                    <div class="teamRightIcon" id="scoIcon2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1173,7 +1182,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty1"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1181,7 +1190,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty2"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1193,7 +1202,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty3"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1201,7 +1210,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty4"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1220,7 +1229,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty5"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1228,7 +1237,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty6"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1240,7 +1249,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty7"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1248,7 +1257,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty8"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1267,7 +1276,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty9"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1275,7 +1284,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty10"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1294,7 +1303,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty11"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1302,7 +1311,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty12"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1321,7 +1330,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty13"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1329,7 +1338,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty14"></div>
                   </div>
                 </div>
                 <div class="info">
@@ -1348,7 +1357,7 @@
               <div class="matchContainer">
                 <div class="match">
                   <div class="matchIcon">
-                    <div class="teamLeftIcon" id=""></div>
+                    <div class="teamLeftIcon" id="empty15"></div>
                   </div>
                   <div class="team1">TBC</div>
                   <div class="timeResult" id="koTime">
@@ -1356,7 +1365,7 @@
                   </div>
                   <div class="team2">TBC</div>
                   <div class="matchIcon">
-                    <div class="teamRightIcon" id=""></div>
+                    <div class="teamRightIcon" id="empty16"></div>
                   </div>
                 </div>
                 <div class="info">

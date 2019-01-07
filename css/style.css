@@ -183,23 +183,82 @@ body{
 
 #homeSlideshow {
   width: 100%;
-  height: 44em;
   background-color: grey;
+  overflow: hidden;
+  padding: 0;
+}
+
+.homeSlide {
+  height: 36em;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.homeSlide img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+
+.slideText {
+  position: absolute;
+  top: 2.4em;
+  left: .8em;
+  color: #009B4E;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
 }
 
 /*----------------------Page 2 ----------------------*/
-.map {
-  display: flex;
-  padding-left: .2em;
-  padding-right: .2em;
+
+.venueSelectorBox {
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-top: 2em;
 }
-#venueMap {
+
+.venueSelector {
+  display: flex;
   width: 100%;
-  height: 25em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Japan_location_map.svg/1028px-Japan_location_map.svg.png');
-  background-position: bottom 80% right 45%;
-  background-repeat: no-repeat;
-  background-size: 140%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BC002D;
+  color: white;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-radius: 1em;
+}
+
+#venueLeft {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right:18px solid white;
+  padding-left: .2em;
+}
+
+#venueRight {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 18px solid white;
+  padding-right: .2em;
 }
 
 .venue {
@@ -210,7 +269,6 @@ body{
 }
 
 .venueImg {
-  /*display: none;*/
   width: 100%;
   height: 15em;
   background-color: white;
@@ -322,7 +380,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .stage {
-  margin: 0 .5em 1em .5em;
+  margin: 2em .5em 1em .5em;
   border-radius: .6em;
 
 }
@@ -425,73 +483,73 @@ table th {
   padding-top: .4em;
 }
 
-#jpIcon {
+#jpIcon1, #jpIcon2, #jpIcon3, #jpIcon4, #jpIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg');
 }
-#irIcon {
+#irIcon1, #irIcon2, #irIcon3, #irIcon4, #irIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/IRFU_flag.svg');
 }
-#ruIcon {
+#ruIcon1, #ruIcon2, #ruIcon3, #ruIcon4, #ruIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg');
 }
-#samIcon {
+#samIcon1, #samIcon2, #samIcon3, #samIcon4, #samIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg');
 }
-#scoIcon {
+#scoIcon1, #scoIcon2, #scoIcon3, #scoIcon4, #scoIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg');
 }
-#canIcon {
+#canIcon1, #canIcon2, #canIcon3, #canIcon4, #canIcon5, #canIcon6, #canIcon7, #canIcon8, #canIcon9 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg');
 }
-#itIcon {
+#itIcon1, #itIcon2, #itIcon3, #itIcon4, #itIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg');
 }
-#namIcon {
+#namIcon5, #namIcon2, #namIcon3, #namIcon4, #namIcon1 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg');
 }
-#nzIcon {
+#nzIcon1, #nzIcon2, #nzIcon3, #nzIcon4, #nzIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg');
 }
-#saIcon {
+#saIcon1, #saIcon2, #saIcon3, #saIcon4, #saIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg');
 }
-#argIcon {
+#argIcon1, #argIcon2, #argIcon3, #argIcon4, #argIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg');
 }
-#enIcon {
+#enIcon1, #enIcon2, #enIcon3, #enIcon4, #enIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg');
 }
-#frIcon {
+#frIcon1, #frIcon2, #frIcon3, #frIcon4, #frIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg');
 }
-#tgIcon {
+#tgIcon1, #tgIcon2, #tgIcon3, #tgIcon4, #tgIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg');
 }
-#usIcon {
+#usIcon1, #usIcon2, #usIcon3, #usIcon4, #usIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg');
 }
-#ausIcon {
+#ausIcon1, #ausIcon2, #ausIcon3, #ausIcon4, #ausIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg');
 }
-#fjIcon {
+#fjIcon1, #fjIcon2, #fjIcon3, #fjIcon4, #fjIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg');
 }
-#geoIcon {
+#geoIcon1, #geoIcon2, #geoIcon3, #geoIcon4, #geoIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg');
 }
-#uryIcon {
+#uryIcon1, #uryIcon2, #uryIcon3, #uryIcon4, #uryIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg');
 }
-#walIcon {
+#walIcon1, #walIcon4, #walIcon2, #walIcon3, #walIcon5 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Wales_%281959%E2%80%93present%29.svg');
 }
-#gerIcon {
+#gerIcon1, #gerIcon2, #gerIcon3, #gerIcon4 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg');
 }
-#hkIcon {
+#hkIcon1, #hkIcon2, #hkIcon3, #hkIcon4 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg');
 }
-#kenIcon {
+#kenIcon1, #kenIcon2, #kenIcon3, #kenIcon4 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg');
 }
 
@@ -588,13 +646,7 @@ table th {
   border-bottom: grey solid .2px;
 }
 
-.filterBy:hover .filters {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.filters {
+#filters {
   display: none;
 }
 
@@ -649,6 +701,31 @@ table th {
   border-bottom: 18px solid transparent;
   border-left: 18px solid white;
   padding-right: .2em;
+}
+
+.stageSelectorBox{
+  display: none;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.stageSelector {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.stageFilt {
+  display: flex;
+  background-color: #BC002D;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  padding-top: .8em;
+  padding-bottom: .8em;
+  border-radius: 1em;
+  margin-bottom: .4em;
 }
 
 .matches {
@@ -814,11 +891,12 @@ footer {
     * {
       max-width: 999px;
     }
-    header {background-color: #BC002D;
-    }
 
-    body{
-      background-color: #000000;
+    .venueImg {
+      width: 100%;
+      height: 30em;
+      background-color: white;
+      border-radius: 2em;
     }
 
     .thFull{
@@ -833,10 +911,6 @@ footer {
       font-family: 'Shojumaru', cursive;
     }
 
-    /*.tdMed {
-      display: inline;
-      font-family: 'Shojumaru', cursive;
-    }*/
 
     .thShort {
       display: none;
@@ -896,13 +970,42 @@ footer {
   .navBox {
     display: flex;
     flex-direction: row;
+    height: 100%;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   nav a {
     display: inline-flex;
     flex-direction: row;
+    align-items: center;
+    height: 100%;
     width: auto;
-    margin: 0;
+    border-radius: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  nav a:hover{
+    background-color: #BC002D;
+    color: white;
+  }
+
+  .contentHead {
+    margin-top: 2em;
+  }
+
+  .slideText {
+    position: absolute;
+    top: 6.5em;
+    left: .8em;
+  }
+
+
+  .venueImg {
+    height: 40em;
+    background-position: center;
   }
 
   .thFull{
@@ -939,6 +1042,12 @@ footer {
    flex: .5;
   }
 
+  .slideText {
+    position: absolute;
+    top: 8em;
+    left: 3em;
+  }
+
  @media screen and (min-width: 1620px) {
   .gridCenter {
     max-width: 1442px;
@@ -949,5 +1058,11 @@ footer {
     }
    .gridRight {
       width: auto;
+    }
+
+    .slideText {
+      position: absolute;
+      top: 8em;
+      left: 5em;
     }
 }

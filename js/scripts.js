@@ -16,7 +16,7 @@ const page = document.getElementById('pageContent');
     menu.style.display = "none";
     close.style.display = "none";
     open.style.display = "flex";
-    page.style.display = "block";
+    page.style.display = "flex";
   }
 
 

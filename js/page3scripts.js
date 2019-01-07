@@ -1,6 +1,5 @@
 const qual = document.getElementById('qualHead');
 const poolStage = document.getElementById('rwcHead');
-const knockout = document.getElementById('knockoutHead');
 
 const repe = document.getElementById('repechage');
 
